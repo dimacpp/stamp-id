@@ -1,0 +1,39 @@
+{
+    "name": "stamp-id",
+    "version": "0.0.1",
+    "description": "Library to generate and validate ID by pattern",
+    "keywords": [
+        "id",
+        "uid",
+        "generator",
+        "validator",
+        "random"
+    ],
+    "license": "MIT",
+    "author": "dimacpp <dimacpp@gmail.com>",
+    "main": "index.js",
+    "files": [
+        "index.js",
+        "README.md",
+        "LICENSE"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dimacpp/stamp-id.git"
+    },
+    "bugs": {
+        "url": "https://github.com/dimacpp/stamp-id/issues"
+    },
+    "homepage": "https://github.com/dimacpp/stamp-id",
+    "scripts": {
+        "test": "tape tests/*.js",
+        "examples": "tape tests/examples.js",
+        "eslint": "./node_modules/.bin/eslint index.js",
+        "jsdoc": "./node_modules/.bin/jsdoc2md index.js"
+    },
+    "devDependencies": {
+        "eslint": "^5.5.0",
+        "jsdoc-to-markdown": "^4.0.1",
+        "tape": "^4.9.1"
+    }
+}
