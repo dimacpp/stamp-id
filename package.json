@@ -32,8 +32,8 @@
         "jsdoc": "./node_modules/.bin/jsdoc2md index.js"
     },
     "devDependencies": {
-        "eslint": "^5.5.0",
-        "jsdoc-to-markdown": "^4.0.1",
-        "tape": "^4.9.1"
+        "eslint": "6.4.0",
+        "jsdoc-to-markdown": "5.0.1",
+        "tape": "4.11.0"
     }
 }
