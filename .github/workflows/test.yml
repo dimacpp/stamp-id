@@ -3,7 +3,7 @@ name: test
 on: push
 
 jobs:
-  buildAndTest:
+  test:
     runs-on: ubuntu-latest
 
     strategy:
