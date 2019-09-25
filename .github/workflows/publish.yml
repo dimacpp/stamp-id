@@ -7,6 +7,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v1
+      - name: use npm
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
       - name: publish
         run: npm publish
         env:
