@@ -3,8 +3,20 @@ on:
   release
 
 jobs:
-  publish:
+  test:
     runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm i && npm test
+
+  publish:
+    needs: test
+    runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
@@ -13,14 +25,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npm run build
 
-      - name: Publish beta
-        if: github.event.prerelease == true
-        run: npm publish --tag beta
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm}}
-
-      - name: Publish stable
-        if: github.event.prerelease == false
-        run: npm publish --tag beta
+      - name: publish
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm}}

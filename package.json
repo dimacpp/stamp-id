@@ -1,6 +1,6 @@
 {
     "name": "stamp-id",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Library to generate and validate ID by pattern",
     "keywords": [
         "id",
