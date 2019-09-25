@@ -3,7 +3,6 @@
 Library to generate and validate ID by pattern.
 
 [![no dependencies](https://img.shields.io/badge/dependencies-none-green.svg)]()
-[![travis](https://travis-ci.org/dimacpp/stamp-id.svg?branch=master)]()
 
 ## Install
 
