@@ -60,3 +60,4 @@ typings/
 # other
 _notes.txt
 package-lock.json
+.vscode/*

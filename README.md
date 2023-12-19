@@ -6,7 +6,7 @@ Library to generate and validate ID by pattern.
 
 ## Install
 
-`npm install stamp-id --save`
+`npm i stamp-id`
 
 ## Examples
 
@@ -69,11 +69,11 @@ Library to generate and validate ID by pattern.
 <dt><a href="#generate">generate([pattern])</a> ⇒ <code>string</code></dt>
 <dd><p>Generate new random id.</p>
 </dd>
-<dt><a href="#validate">validate(id, [pattern])</a> ⇒ <code>boolean</code></dt>
+<dt><a href="#validate">validate(id, [pattern], [flags])</a> ⇒ <code>boolean</code></dt>
 <dd><p>Validate id against pattern.</p>
 </dd>
 <dt><a href="#setAlphabet">setAlphabet(code, abc)</a></dt>
-<dd><p>Add new or update exist alphabet.</p>
+<dd><p>Add new or update existing alphabet.</p>
 </dd>
 </dl>
 
@@ -82,8 +82,8 @@ Library to generate and validate ID by pattern.
 #### generate([pattern]) ⇒ <code>string</code>
 Generate new random id.
 
-**Kind**: global function
-**Returns**: <code>string</code> - id Random id.
+**Kind**: global function  
+**Returns**: <code>string</code> - Random id.  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -91,23 +91,24 @@ Generate new random id.
 
 <a name="validate"></a>
 
-#### validate(id, [pattern]) ⇒ <code>boolean</code>
+#### validate(id, [pattern], [flags]) ⇒ <code>boolean</code>
 Validate id against pattern.
 
-**Kind**: global function
-**Returns**: <code>boolean</code> - True if the id could be generated with the pattern.
+**Kind**: global function  
+**Returns**: <code>boolean</code> - True if the id could be generated with the pattern.  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | id | <code>string</code> |  | Id to test. |
 | [pattern] | <code>string</code> | <code>&quot;zzzzzzzz&quot;</code> | Text pattern. |
+| [flags] | <code>string</code> |  | Flags string ("i" means ignore case). |
 
 <a name="setAlphabet"></a>
 
 #### setAlphabet(code, abc)
-Add new or update exist alphabet.
+Add new or update existing alphabet.
 
-**Kind**: global function
+**Kind**: global function  
 
 | Param | Type | Description |
 | --- | --- | --- |
