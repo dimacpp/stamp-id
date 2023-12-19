@@ -16,7 +16,7 @@ const alphabets = {
 /**
  * Generate new random id.
  * @param {string} [pattern=zzzzzzzz] Text pattern of desired id.
- * @returns {string} id Random id.
+ * @returns {string} Random id.
  */
 function generate(pattern) {
     const _pattern = pattern || DEFAULT_PATTERN;
@@ -34,6 +34,7 @@ function generate(pattern) {
  * Validate id against pattern.
  * @param {string} id Id to test.
  * @param {string} [pattern=zzzzzzzz] Text pattern.
+ * @param {string} [flags] Flags string ("i" means ignore case).
  * @returns {boolean} True if the id could be generated with the pattern.
  */
 function validate(id, pattern, flags) {
@@ -52,7 +53,7 @@ function validate(id, pattern, flags) {
 
 
 /**
- * Add new or update exist alphabet.
+ * Add new or update existing alphabet.
  * @param {string} code One character which will be used in patterns.
  * @param {string} abc Alphabet chars.
  */
