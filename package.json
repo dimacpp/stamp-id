@@ -29,12 +29,12 @@
     "scripts": {
         "test": "tape tests/*.js",
         "examples": "tape tests/examples.js",
-        "eslint": "./node_modules/.bin/eslint index.js",
+        "eslint": "eslint index.js",
         "jsdoc": "jsdoc2md index.js"
     },
     "devDependencies": {
-        "eslint": "8.56.0",
-        "jsdoc-to-markdown": "8.0.0",
-        "tape": "5.7.2"
+        "eslint": "8.57.1",
+        "jsdoc-to-markdown": "9.0.4",
+        "tape": "5.9.0"
     }
 }
