@@ -2,7 +2,8 @@
 
 Library to generate and validate ID by pattern.
 
-[![no dependencies](https://img.shields.io/badge/dependencies-none-green.svg)]()
+[![no dependencies](https://img.shields.io/badge/dependencies-none-green)]()
+[![typescript types](https://img.shields.io/badge/typescript-types-blue)]()
 
 ## Install
 
@@ -12,29 +13,29 @@ Library to generate and validate ID by pattern.
 
 ### General usage
 
-    const stampId = require('stamp-id');
+    import stampId from 'stamp-id'
 
     // generate
-    const id = stampId.generate();
+    const id = stampId.generate()
 
     // validate
-    const isValid = stampId.validate(id);
+    const isValid = stampId.validate(id)
 
 
 ### Generate examples
 
     // 1
-    const id = stampId.generate('ddd-dd-dddd');
+    const id = stampId.generate('ddd-dd-dddd')
     // --> "253-15-7920
 
     // 2
-    stampId.setAlphabet('N', '23456789');
-    const id = stampId.generate('+1 Ndd-Ndd-dddd');
+    stampId.setAlphabet('N', '23456789')
+    const id = stampId.generate('+1 Ndd-Ndd-dddd')
     // --> "+1 517-724-3835"
 
     // 3
-    stampId.setAlphabet('R', 'AAAAAAAAAB');
-    const id = stampId.generate('R');
+    stampId.setAlphabet('R', 'AAAAAAAAAB')
+    const id = stampId.generate('R')
     // --> "A" (90% probability) or "B" (10% probability)
 
 
@@ -53,14 +54,14 @@ Library to generate and validate ID by pattern.
 ### Validate examples
 
     // 1
-    const id = 'FRIDAY13';
-    const isValid = stampId.validate(id, 'CCCCCC13');
+    const id = 'FRIDAY13'
+    const isValid = stampId.validate(id, 'CCCCCC13')
     // --> true
 
     // 1
-    stampId.setAlphabet('?', '-+./');
-    const id = 'a0+b1/z9.gg-zz';
-    const isValid = stampId.validate(id, 'aa?aa?aa?aa?aa');
+    stampId.setAlphabet('?', '-+./')`
+    const id = 'a0+b1/z9.gg-zz'
+    const isValid = stampId.validate(id, 'aa?aa?aa?aa?aa')
     // --> true
 
 ### API
