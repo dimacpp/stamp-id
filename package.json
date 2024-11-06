@@ -1,6 +1,6 @@
 {
     "name": "stamp-id",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Library to generate and validate ID by pattern",
     "keywords": [
         "id",
@@ -20,7 +20,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/dimacpp/stamp-id.git"
+        "url": "git+https://github.com/dimacpp/stamp-id.git"
     },
     "bugs": {
         "url": "https://github.com/dimacpp/stamp-id/issues"
